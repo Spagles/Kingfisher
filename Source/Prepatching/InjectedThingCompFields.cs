@@ -1,17 +1,17 @@
-using Prepatcher;
+using PurePatcher.Annotations;
 
 namespace Kingfisher.Prepatching;
 
 public static class InjectedThingCompFields {
-    [PrepatcherField]
+    [PurePatcherField]
     [InjectComponent]
     public static extern CompExplosive? ExplosiveComp(this ThingWithComps target);
 
-    [PrepatcherField]
+    [PurePatcherField]
     [InjectComponent]
     public static extern CompPowerTrader? PowerTraderComp(this ThingWithComps target);
 
-    [PrepatcherField]
+    [PurePatcherField]
     [InjectComponent]
     public static extern CompUniqueWeapon? UniqueWeaponComp(this ThingWithComps target);
 }

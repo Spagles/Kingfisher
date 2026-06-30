@@ -5,7 +5,7 @@
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 // SPDX-License-Identifier: MPL-2.0
 
-using Prepatcher;
+using PurePatcher.Annotations;
 using Kingfisher.Prepatching;
 
 namespace Kingfisher.Features;
@@ -81,11 +81,11 @@ public static class ListerBuildingsRewrite {
         return buildings;
     }
 
-    [PrepatcherField]
+    [PurePatcherField]
     [ValueInitializer(nameof(CreateCache))]
     private static extern ref Dictionary<ThingDef, List<Building>> ColonistBuildingsByDef(this ListerBuildings target);
 
-    [PrepatcherField]
+    [PurePatcherField]
     [ValueInitializer(nameof(CreateResultBuffer))]
     private static extern List<Building> ColonistBuildingsOfDefResult(this ListerBuildings target);
 

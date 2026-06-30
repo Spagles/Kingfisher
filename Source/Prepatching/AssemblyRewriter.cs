@@ -1,13 +1,11 @@
 using System.Reflection;
 using Mono.Cecil;
 using Mono.Cecil.Cil;
-using Prepatcher;
-using JetBrains.Annotations;
+using PurePatcher.Annotations;
 
 namespace Kingfisher.Prepatching;
 
 public static class AssemblyRewriter {
-    [UsedImplicitly]
     [FreePatch]
     public static void ReplaceMethods(ModuleDefinition module) {
         if (module.Assembly.Name.Name != "Assembly-CSharp") return;

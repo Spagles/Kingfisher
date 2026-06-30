@@ -18,9 +18,9 @@
       <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
     </li>
     <li>
-      <packageId>zetrith.prepatcher</packageId>
-      <displayName>Prepatcher</displayName>
-      <steamWorkshopUrl>steam://url/CommunityFilePage/2934420800</steamWorkshopUrl>
+      <packageId>Vortex.PurePatcher</packageId>
+      <displayName>PurePatcher</displayName>
+      <downloadUrl>https://github.com/realloon/PurePatcher</downloadUrl>
     </li>
   </modDependencies>
   <incompatibleWith>

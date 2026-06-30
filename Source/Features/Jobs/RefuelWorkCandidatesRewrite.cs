@@ -1,6 +1,6 @@
 using JetBrains.Annotations;
 using HarmonyLib;
-using Prepatcher;
+using PurePatcher.Annotations;
 using Kingfisher.Prepatching;
 
 // ReSharper disable InconsistentNaming
@@ -169,7 +169,7 @@ public static class RefuelWorkCandidates {
         public int LastRebuildTick = -99999;
     }
 
-    [PrepatcherField]
+    [PurePatcherField]
     [ValueInitializer(nameof(CreateState))]
     private static extern State RefuelWorkCandidatesState(this Map target);
 

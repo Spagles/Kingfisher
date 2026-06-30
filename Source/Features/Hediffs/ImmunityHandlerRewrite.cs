@@ -5,7 +5,7 @@
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 // SPDX-License-Identifier: MPL-2.0
 
-using Prepatcher;
+using PurePatcher.Annotations;
 using Kingfisher.Prepatching;
 
 namespace Kingfisher.Features;
@@ -42,7 +42,7 @@ public static class ImmunityHandlerRewrite {
         return infos;
     }
 
-    [PrepatcherField]
+    [PurePatcherField]
     [ValueInitializer(nameof(CreateState))]
     private static extern State Cache(this ImmunityHandler target);
 
