@@ -9,63 +9,63 @@
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-      <OutputPath>../Assemblies</OutputPath>
-      <DebugSymbols>false</DebugSymbols>
-      <DebugType>none</DebugType>
+        <OutputPath>../Assemblies</OutputPath>
+        <DebugSymbols>false</DebugSymbols>
+        <DebugType>none</DebugType>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-      <OutputPath>../Assemblies</OutputPath>
-      <DebugType>none</DebugType>
+        <OutputPath>../Assemblies</OutputPath>
+        <DebugType>none</DebugType>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Krafs.Publicizer" Version="2.3.0" PrivateAssets="all" />
-      <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4633" />
-      <PackageReference Include="Lib.Harmony" Version="2.3.3" ExcludeAssets="runtime" />
-      <PackageReference Include="PurePatcher.Annotations" Version="1.1.0" />
+        <PackageReference Include="Krafs.Publicizer" Version="2.3.0" PrivateAssets="all" />
+        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4633" />
+        <PackageReference Include="Lib.Harmony" Version="2.3.3" ExcludeAssets="runtime" />
+        <PackageReference Include="PurePatcher.Annotations" Version="1.1.0" PrivateAssets="all" ExcludeAssets="runtime" />
     </ItemGroup>
 
     <ItemGroup>
-      <Publicize Include="0Harmony:Mono.Cecil.ModuleDefinition" />
-      <Publicize Include="0Harmony:Mono.Cecil.AssemblyDefinition" />
-      <Publicize Include="0Harmony:Mono.Cecil.AssemblyNameDefinition" />
-      <Publicize Include="0Harmony:Mono.Cecil.AssemblyNameReference" />
-      <Publicize Include="0Harmony:Mono.Cecil.AssemblyNameReference.Name" />
-      <Publicize Include="0Harmony:Mono.Cecil.TypeDefinition" />
-      <Publicize Include="0Harmony:Mono.Cecil.TypeReference" />
-      <Publicize Include="0Harmony:Mono.Cecil.MethodDefinition" />
-      <Publicize Include="0Harmony:Mono.Cecil.MethodReference" />
-      <Publicize Include="0Harmony:Mono.Cecil.ParameterDefinition" />
-      <Publicize Include="0Harmony:Mono.Cecil.ParameterReference" />
-      <Publicize Include="0Harmony:Mono.Cecil.ParameterReference.ParameterType" />
-      <Publicize Include="0Harmony:Mono.Cecil.Cil.MethodBody" />
-      <Publicize Include="0Harmony:Mono.Cecil.Cil.ILProcessor" />
-      <Publicize Include="0Harmony:Mono.Cecil.Cil.Instruction" />
-      <Publicize Include="0Harmony:Mono.Cecil.Cil.ExceptionHandler" />
-      <Publicize Include="0Harmony:Mono.Cecil.Cil.OpCode" />
-      <Publicize Include="0Harmony:Mono.Cecil.Cil.OpCodes" />
-      <Publicize Include="0Harmony:Mono.Collections.Generic.Collection`1" />
+        <Publicize Include="0Harmony:Mono.Cecil.ModuleDefinition" />
+        <Publicize Include="0Harmony:Mono.Cecil.AssemblyDefinition" />
+        <Publicize Include="0Harmony:Mono.Cecil.AssemblyNameDefinition" />
+        <Publicize Include="0Harmony:Mono.Cecil.AssemblyNameReference" />
+        <Publicize Include="0Harmony:Mono.Cecil.AssemblyNameReference.Name" />
+        <Publicize Include="0Harmony:Mono.Cecil.TypeDefinition" />
+        <Publicize Include="0Harmony:Mono.Cecil.TypeReference" />
+        <Publicize Include="0Harmony:Mono.Cecil.MethodDefinition" />
+        <Publicize Include="0Harmony:Mono.Cecil.MethodReference" />
+        <Publicize Include="0Harmony:Mono.Cecil.ParameterDefinition" />
+        <Publicize Include="0Harmony:Mono.Cecil.ParameterReference" />
+        <Publicize Include="0Harmony:Mono.Cecil.ParameterReference.ParameterType" />
+        <Publicize Include="0Harmony:Mono.Cecil.Cil.MethodBody" />
+        <Publicize Include="0Harmony:Mono.Cecil.Cil.ILProcessor" />
+        <Publicize Include="0Harmony:Mono.Cecil.Cil.Instruction" />
+        <Publicize Include="0Harmony:Mono.Cecil.Cil.ExceptionHandler" />
+        <Publicize Include="0Harmony:Mono.Cecil.Cil.OpCode" />
+        <Publicize Include="0Harmony:Mono.Cecil.Cil.OpCodes" />
+        <Publicize Include="0Harmony:Mono.Collections.Generic.Collection`1" />
 
-      <Publicize Include="mscorlib:System.Collections.Generic.List`1._version" />
+        <Publicize Include="mscorlib:System.Collections.Generic.List`1._version" />
 
-      <Publicize Include="Assembly-CSharp:Verse.ListerThings.listsByDef" />
-      <Publicize Include="Assembly-CSharp:Verse.ListerThings.listsByGroup" />
-      <Publicize Include="Assembly-CSharp:Verse.ListerThings.haulSources" />
-      <Publicize Include="Assembly-CSharp:Verse.ListerThings.stateHashByGroup" />
-      <Publicize Include="Assembly-CSharp:Verse.Explosion.cellsToAffect" />
-      <Publicize Include="Assembly-CSharp:Verse.AI.Pawn_PathFollower.pawn" />
-      <Publicize Include="Assembly-CSharp:Verse.AI.AttackTargetFinder.GetShootingTargetScore" />
-      <Publicize Include="Assembly-CSharp:Verse.AI.AttackTargetFinder.FindBestReachableMeleeTarget" />
-      <Publicize Include="Assembly-CSharp:Verse.ImmunityHandler.NeededImmunitiesNow" />
-      <Publicize Include="Assembly-CSharp:Verse.Log.messageQueue" />
-      <Publicize Include="Assembly-CSharp:Verse.Log.logLock" />
-      <Publicize Include="Assembly-CSharp:Verse.Log.PostMessage" />
+        <Publicize Include="Assembly-CSharp:Verse.ListerThings.listsByDef" />
+        <Publicize Include="Assembly-CSharp:Verse.ListerThings.listsByGroup" />
+        <Publicize Include="Assembly-CSharp:Verse.ListerThings.haulSources" />
+        <Publicize Include="Assembly-CSharp:Verse.ListerThings.stateHashByGroup" />
+        <Publicize Include="Assembly-CSharp:Verse.Explosion.cellsToAffect" />
+        <Publicize Include="Assembly-CSharp:Verse.AI.Pawn_PathFollower.pawn" />
+        <Publicize Include="Assembly-CSharp:Verse.AI.AttackTargetFinder.GetShootingTargetScore" />
+        <Publicize Include="Assembly-CSharp:Verse.AI.AttackTargetFinder.FindBestReachableMeleeTarget" />
+        <Publicize Include="Assembly-CSharp:Verse.ImmunityHandler.NeededImmunitiesNow" />
+        <Publicize Include="Assembly-CSharp:Verse.Log.messageQueue" />
+        <Publicize Include="Assembly-CSharp:Verse.Log.logLock" />
+        <Publicize Include="Assembly-CSharp:Verse.Log.PostMessage" />
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="Kingfisher.sln.DotSettings" />
-      <None Remove="Kingfisher.csproj.DotSettings" />
+        <None Remove="Kingfisher.sln.DotSettings" />
+        <None Remove="Kingfisher.csproj.DotSettings" />
     </ItemGroup>
 
 </Project>
