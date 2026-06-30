@@ -6,6 +6,7 @@
         <Nullable>enable</Nullable>
         <LangVersion>14</LangVersion>
         <IsPackable>false</IsPackable>
+        <PublicizerRuntimeStrategies>Unsafe</PublicizerRuntimeStrategies>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -27,40 +28,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Publicize Include="0Harmony:Mono.Cecil.ModuleDefinition" />
-        <Publicize Include="0Harmony:Mono.Cecil.AssemblyDefinition" />
-        <Publicize Include="0Harmony:Mono.Cecil.AssemblyNameDefinition" />
-        <Publicize Include="0Harmony:Mono.Cecil.AssemblyNameReference" />
-        <Publicize Include="0Harmony:Mono.Cecil.AssemblyNameReference.Name" />
-        <Publicize Include="0Harmony:Mono.Cecil.TypeDefinition" />
-        <Publicize Include="0Harmony:Mono.Cecil.TypeReference" />
-        <Publicize Include="0Harmony:Mono.Cecil.MethodDefinition" />
-        <Publicize Include="0Harmony:Mono.Cecil.MethodReference" />
-        <Publicize Include="0Harmony:Mono.Cecil.ParameterDefinition" />
-        <Publicize Include="0Harmony:Mono.Cecil.ParameterReference" />
-        <Publicize Include="0Harmony:Mono.Cecil.ParameterReference.ParameterType" />
-        <Publicize Include="0Harmony:Mono.Cecil.Cil.MethodBody" />
-        <Publicize Include="0Harmony:Mono.Cecil.Cil.ILProcessor" />
-        <Publicize Include="0Harmony:Mono.Cecil.Cil.Instruction" />
-        <Publicize Include="0Harmony:Mono.Cecil.Cil.ExceptionHandler" />
-        <Publicize Include="0Harmony:Mono.Cecil.Cil.OpCode" />
-        <Publicize Include="0Harmony:Mono.Cecil.Cil.OpCodes" />
-        <Publicize Include="0Harmony:Mono.Collections.Generic.Collection`1" />
-
+        <Publicize Include="Assembly-CSharp; 0Harmony" />
         <Publicize Include="mscorlib:System.Collections.Generic.List`1._version" />
-
-        <Publicize Include="Assembly-CSharp:Verse.ListerThings.listsByDef" />
-        <Publicize Include="Assembly-CSharp:Verse.ListerThings.listsByGroup" />
-        <Publicize Include="Assembly-CSharp:Verse.ListerThings.haulSources" />
-        <Publicize Include="Assembly-CSharp:Verse.ListerThings.stateHashByGroup" />
-        <Publicize Include="Assembly-CSharp:Verse.Explosion.cellsToAffect" />
-        <Publicize Include="Assembly-CSharp:Verse.AI.Pawn_PathFollower.pawn" />
-        <Publicize Include="Assembly-CSharp:Verse.AI.AttackTargetFinder.GetShootingTargetScore" />
-        <Publicize Include="Assembly-CSharp:Verse.AI.AttackTargetFinder.FindBestReachableMeleeTarget" />
-        <Publicize Include="Assembly-CSharp:Verse.ImmunityHandler.NeededImmunitiesNow" />
-        <Publicize Include="Assembly-CSharp:Verse.Log.messageQueue" />
-        <Publicize Include="Assembly-CSharp:Verse.Log.logLock" />
-        <Publicize Include="Assembly-CSharp:Verse.Log.PostMessage" />
     </ItemGroup>
 
     <ItemGroup>
