@@ -4,7 +4,7 @@
   <name>Kingfisher</name>
   <description>By tracing and measuring the vanilla source code and identifying performance bottlenecks, Kingfisher replaces them with more efficient implementations. This makes TPS/FPS gains without side effects possible.</description>
   <author>Vortex</author>
-  <modVersion>0.6.0</modVersion>
+  <modVersion>0.6.1</modVersion>
   <supportedVersions>
     <li>1.6</li>
   </supportedVersions>
@@ -20,7 +20,7 @@
     <li>
       <packageId>Vortex.PurePatcher</packageId>
       <displayName>PurePatcher</displayName>
-      <downloadUrl>https://github.com/realloon/PurePatcher</downloadUrl>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3755504957</steamWorkshopUrl>
     </li>
   </modDependencies>
   <incompatibleWith>
