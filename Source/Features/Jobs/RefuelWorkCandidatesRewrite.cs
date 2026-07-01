@@ -168,8 +168,8 @@ public static class RefuelWorkCandidates {
         public int LastRebuildTick = -99999;
     }
 
-    [PurePatcherField]
-    [ValueInitializer(nameof(CreateState))]
+    [AddField]
+    [InitValue(nameof(CreateState))]
     private static extern State RefuelWorkCandidatesState(this Map target);
 
     private static State CreateState() => new();

@@ -3,15 +3,15 @@ using PurePatcher.Annotations;
 namespace Kingfisher.Prepatching;
 
 public static class InjectedThingCompFields {
-    [PurePatcherField]
-    [InjectComponent]
+    [AddField]
+    [BindComponent]
     public static extern CompExplosive? ExplosiveComp(this ThingWithComps target);
 
-    [PurePatcherField]
-    [InjectComponent]
+    [AddField]
+    [BindComponent]
     public static extern CompPowerTrader? PowerTraderComp(this ThingWithComps target);
 
-    [PurePatcherField]
-    [InjectComponent]
+    [AddField]
+    [BindComponent]
     public static extern CompUniqueWeapon? UniqueWeaponComp(this ThingWithComps target);
 }

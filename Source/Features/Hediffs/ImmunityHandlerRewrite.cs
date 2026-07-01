@@ -41,8 +41,8 @@ public static class ImmunityHandlerRewrite {
         return infos;
     }
 
-    [PurePatcherField]
-    [ValueInitializer(nameof(CreateState))]
+    [AddField]
+    [InitValue(nameof(CreateState))]
     private static extern State Cache(this ImmunityHandler target);
 
     private static State CreateState() => new();

@@ -81,12 +81,12 @@ public static class ListerBuildingsRewrite {
         return buildings;
     }
 
-    [PurePatcherField]
-    [ValueInitializer(nameof(CreateCache))]
+    [AddField]
+    [InitValue(nameof(CreateCache))]
     private static extern ref Dictionary<ThingDef, List<Building>> ColonistBuildingsByDef(this ListerBuildings target);
 
-    [PurePatcherField]
-    [ValueInitializer(nameof(CreateResultBuffer))]
+    [AddField]
+    [InitValue(nameof(CreateResultBuffer))]
     private static extern List<Building> ColonistBuildingsOfDefResult(this ListerBuildings target);
 
     private static Dictionary<ThingDef, List<Building>> CreateCache() => [];
