@@ -1,14 +1,13 @@
 using JetBrains.Annotations;
 using HarmonyLib;
 using PurePatcher.Annotations;
-using Kingfisher.Prepatching;
 
 // ReSharper disable InconsistentNaming
 
 namespace Kingfisher.Features;
 
 public static class RefuelWorkCandidatesRewrite {
-    [MethodRewrite(typeof(WorkGiver_Scanner), nameof(WorkGiver_Scanner.PotentialWorkThingsGlobal))]
+    [ReplaceMethod(typeof(WorkGiver_Scanner), nameof(WorkGiver_Scanner.PotentialWorkThingsGlobal))]
     public static IEnumerable<Thing>? PotentialWorkThingsGlobal(WorkGiver_Scanner scanner, Pawn pawn) {
         return scanner is WorkGiver_Refuel ? RefuelWorkCandidates.CandidatesFor(pawn.Map) : null;
     }

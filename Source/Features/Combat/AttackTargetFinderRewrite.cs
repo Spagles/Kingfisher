@@ -1,12 +1,13 @@
 using UnityEngine;
 using Verse.AI;
 using Verse.AI.Group;
+using PurePatcher.Annotations;
 using Kingfisher.Prepatching;
 
 namespace Kingfisher.Features;
 
 public static class AttackTargetFinderRewrite {
-    [MethodRewrite(typeof(AttackTargetFinder), nameof(AttackTargetFinder.BestAttackTarget))]
+    [ReplaceMethod(typeof(AttackTargetFinder), nameof(AttackTargetFinder.BestAttackTarget))]
     public static IAttackTarget? BestAttackTarget(IAttackTargetSearcher searcher, TargetScanFlags flags,
         Predicate<Thing>? validator, float minDist, float maxDist, IntVec3 locus, float maxTravelRadiusFromLocus,
         bool canBashDoors, bool canTakeTargetsCloserThanEffectiveMinRange, bool canBashFences, bool onlyRanged) {

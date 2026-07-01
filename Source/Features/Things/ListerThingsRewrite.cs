@@ -1,9 +1,9 @@
-using Kingfisher.Prepatching;
+using PurePatcher.Annotations;
 
 namespace Kingfisher.Features;
 
 public static class ListerThingsRewrite {
-    [MethodRewrite(typeof(ListerThings), nameof(ListerThings.Remove))]
+    [ReplaceMethod(typeof(ListerThings), nameof(ListerThings.Remove))]
     public static void Remove(ListerThings listerThings, Thing thing) {
         if (!ListerThings.EverListable(thing.def, listerThings.use)) {
             return;
