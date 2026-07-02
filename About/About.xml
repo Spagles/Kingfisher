@@ -4,7 +4,7 @@
   <name>Kingfisher</name>
   <description>By tracing and measuring the vanilla source code and identifying performance bottlenecks, Kingfisher replaces them with more efficient implementations. This makes TPS/FPS gains without side effects possible.</description>
   <author>Vortex</author>
-  <modVersion>0.6.1</modVersion>
+  <modVersion>0.6.2</modVersion>
   <supportedVersions>
     <li>1.6</li>
   </supportedVersions>
@@ -26,5 +26,6 @@
   <incompatibleWith>
     <li>bs.performance</li> <!-- compatibility not yet handled -->
     <li>CETeam.CombatExtended</li> <!-- compatibility not yet handled -->
+    <li>Taranchuk.FasterGameLoading</li> <!-- compatibility not yet handled -->
   </incompatibleWith>
 </ModMetaData>
