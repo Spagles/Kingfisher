@@ -4,7 +4,7 @@
   <name>Kingfisher</name>
   <description>By tracing and measuring the vanilla source code and identifying performance bottlenecks, Kingfisher replaces them with more efficient implementations. This makes TPS/FPS gains without side effects possible.</description>
   <author>Vortex</author>
-  <modVersion>0.7.1</modVersion>
+  <modVersion>0.7.2</modVersion>
   <supportedVersions>
     <li>1.6</li>
   </supportedVersions>
@@ -23,7 +23,4 @@
       <steamWorkshopUrl>steam://url/CommunityFilePage/3755504957</steamWorkshopUrl>
     </li>
   </modDependencies>
-  <incompatibleWith>
-    <li>bs.performance</li> <!-- compatibility not yet handled -->
-  </incompatibleWith>
 </ModMetaData>
