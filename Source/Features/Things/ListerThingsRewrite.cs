@@ -17,8 +17,9 @@ public static class ListerThingsRewrite {
             RemoveFromTail(listerThings.haulSources, haulSource);
         }
 
-        for (var i = 0; i < AllGroups.Length; i++) {
-            var group = AllGroups[i];
+        var allGroups = ThingListGroupHelper.AllGroups;
+        for (var i = 0; i < allGroups.Length; i++) {
+            var group = allGroups[i];
             if (listerThings.use == ListerThingsUse.Region && !group.StoreInRegion()) {
                 continue;
             }
@@ -36,16 +37,11 @@ public static class ListerThingsRewrite {
 
     # region Helper
 
-    private static readonly ThingRequestGroup[] AllGroups = ThingListGroupHelper.AllGroups;
-
     private static void RemoveFromTail<T>(List<T> list, T item) {
         var index = list.LastIndexOf(item);
-        if (index >= 0) {
-            list.RemoveAt(index);
-            return;
-        }
+        if (index < 0) return;
 
-        list.Remove(item);
+        list.RemoveAt(index);
     }
 
     # endregion
