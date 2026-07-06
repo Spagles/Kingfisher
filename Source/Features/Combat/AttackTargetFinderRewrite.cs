@@ -2,7 +2,6 @@ using UnityEngine;
 using Verse.AI;
 using Verse.AI.Group;
 using PurePatcher.Annotations;
-using Kingfisher.Prepatching;
 
 namespace Kingfisher.Features;
 
@@ -218,6 +217,14 @@ public static class AttackTargetFinderRewrite {
     private static readonly List<IAttackTarget> FallbackTargets = new(128);
     private static readonly List<float> ShootableTargetScores = new(32);
     private static readonly List<Pair<IAttackTarget, float>> WeightedTargets = new(32);
+
+    [AddField]
+    [BindComponent]
+    private static extern CompExplosive? ExplosiveComp(this ThingWithComps target);
+
+    [AddField]
+    [BindComponent]
+    private static extern CompUniqueWeapon? UniqueWeaponComp(this ThingWithComps target);
 
     private static IAttackTarget? FindBestMeleeTarget(Thing searcherThing, Pawn? searcherPawn,
         Predicate<IAttackTarget> validator, float maxDist, bool canBashDoors, bool canBashFences) {

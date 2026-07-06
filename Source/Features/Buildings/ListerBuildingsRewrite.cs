@@ -6,7 +6,6 @@
 // SPDX-License-Identifier: MPL-2.0
 
 using PurePatcher.Annotations;
-using Kingfisher.Prepatching;
 
 namespace Kingfisher.Features;
 
@@ -88,6 +87,10 @@ public static class ListerBuildingsRewrite {
     [AddField]
     [InitValue(nameof(CreateResultBuffer))]
     private static extern List<Building> ColonistBuildingsOfDefResult(this ListerBuildings target);
+
+    [AddField]
+    [BindComponent]
+    private static extern CompPowerTrader? PowerTraderComp(this ThingWithComps target);
 
     private static Dictionary<ThingDef, List<Building>> CreateCache() => [];
 
