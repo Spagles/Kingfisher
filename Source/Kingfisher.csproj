@@ -22,9 +22,9 @@
 
     <ItemGroup>
         <PackageReference Include="Krafs.Publicizer" Version="2.3.0" PrivateAssets="all" />
-        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4633" />
-        <PackageReference Include="Lib.Harmony" Version="2.3.3" ExcludeAssets="runtime" />
-        <PackageReference Include="PurePatcher.Annotations" Version="1.5.0" PrivateAssets="all" ExcludeAssets="runtime" />
+        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.6.4871" />
+        <PackageReference Include="Lib.Harmony" Version="2.4.2" ExcludeAssets="runtime" />
+        <PackageReference Include="PurePatcher.Annotations" Version="1.6.1" PrivateAssets="all" ExcludeAssets="runtime" />
     </ItemGroup>
 
     <ItemGroup>
