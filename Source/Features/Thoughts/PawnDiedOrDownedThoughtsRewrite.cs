@@ -19,9 +19,7 @@ public static class PawnDiedOrDownedThoughtsRewrite {
                 break;
         }
 
-        if (!canRemoveRelationLost) {
-            return;
-        }
+        if (!canRemoveRelationLost) return;
 
         FillLostRelationThoughtDefs(pawn);
         RemoveRelationLostThoughts(pawn, relations!);
@@ -50,11 +48,6 @@ public static class PawnDiedOrDownedThoughtsRewrite {
             );
         }
     }
-
-    # region Helper
-
-    private static readonly List<ThoughtDef> LostRelationThoughtDefs = new(16);
-    private static readonly List<Pawn> RelatedPawns = new(16);
 
     public static void TryGiveDiedThoughts(Pawn victim, DamageInfo? dinfo) {
         try {
@@ -100,6 +93,11 @@ public static class PawnDiedOrDownedThoughtsRewrite {
             Log.Warning("Could not give thoughts: " + ex);
         }
     }
+
+    # region Helper
+
+    private static readonly List<ThoughtDef> LostRelationThoughtDefs = new(16);
+    private static readonly List<Pawn> RelatedPawns = new(16);
 
     private static void RemoveColonistLostThoughts(Pawn pawn) {
         var colonists = PawnsFinder.AllMapsCaravansAndTravellingTransporters_Alive_Colonists;
