@@ -2,15 +2,10 @@
 .tmp/
 .refs/
 
-# Agent
-.codex/
-AGENTS.md
-
 # C#
-Source/.idea
 Source/bin
 Source/obj
 *.user
 
-# Dist
+# Build
 Assemblies
