@@ -6,7 +6,11 @@ By tracing and measuring the RimWorld source code and identifying performance bo
 
 ## License
 
-This repository uses mixed licensing. See [LICENSE](LICENSE.md) for the file-level split between MIT and MPL-2.0.
+This repository uses mixed licensing.
+
+Files that implement, adapt, or directly support Performance Fish-related optimization work remain under the [MPL-2.0](LICENSE.MPL-2.0).
+
+The remaining content of this repository is provided under the [MIT](LICENSE.MIT) License.
 
 ## Credits
 
